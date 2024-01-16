@@ -1,9 +1,14 @@
 <script setup>
-import Nav from '@/Shared/Nav.vue'
+import Layout from "@/Shared/Layout.vue";
 </script>
 
 <template>
   <Head title="Home"/>
-  <Nav/>
-  <h1>Home</h1>
+
+  <Layout>
+    <div class="flex justify-center items-center h-screen">
+      <h1 class="text-3xl">Home</h1>
+    </div>
+  </Layout>
 </template>
+
