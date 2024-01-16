@@ -5,9 +5,10 @@ import NavLink from '@/Shared/NavLink.vue'
 <template>
   <section class="p-4 bg-gray-800 drop-shadow-md">
     <header class="flex justify-between">
-      <h1 class="text-lg mt-1 text-slate-200">Logo</h1>
+      <img alt="Logo" class="object-scale-down max-h-8 rounded-lg" src="../../../public/images/logo.png"/>
       <section class="flex space-x-4">
-        <NavLink :active="$page.component === 'Home'" href="/">Home</NavLink>
+        <NavLink :active="$page.component === 'About'" href="/">About</NavLink>
+        <NavLink :active="$page.component === 'Technologies'" href="/technologies">Technologies</NavLink>
         <NavLink :active="$page.component === 'Resume'" href="/resume">Resume</NavLink>
       </section>
       <section>

@@ -1,12 +1,12 @@
 <script setup>
-import Layout from '@/Shared/Layout.vue'
+import Layout from "@/Shared/Layout.vue";
 </script>
 
 <template>
-  <Head title="Resume"/>
+  <Head title="Technologies"/>
 
   <Layout>
-    <div class="flex justify-center items-center h-screen">
+    <div class="flex justify-center items-center h-screen ">
       <p class="text-xl mx-auto px-4 sm:px-6 lg:px-8 max-w-prose text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Vitae elementum curabitur vitae nunc. Fringilla est ullamcorper eget nulla facilisi etiam
@@ -20,3 +20,4 @@ import Layout from '@/Shared/Layout.vue'
     </div>
   </Layout>
 </template>
+
