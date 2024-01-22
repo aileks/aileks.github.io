@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    height: 100%;
+}
+
+html {
+    @apply antialiased;
+    @apply text-[#272d2d];
+}
+
 body {
     @apply bg-[#edf5fc];
-    @apply overflow-hidden;
+    overflow-y: hidden;
+}
+
+@media (max-width: 600px) {
+    overflow-y: auto;
 }
