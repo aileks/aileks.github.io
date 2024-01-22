@@ -1,12 +1,15 @@
 {
   "name": "personal-website",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://aileks.github.io/",
   "type": "module",
   "scripts": {
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
     "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.10"

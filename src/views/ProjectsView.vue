@@ -29,7 +29,7 @@ const closeModal = () => {
           This very website built using <b>Vue!</b>
         </p>
 
-        <a href="https://github.com/aileks/personal-website" target="_blank"
+        <a href="https://github.com/aileks/aileks.github.io" target="_blank"
           class="text-[#272d2d] text-sm font-bold hover:underline top-0 right-0 absolute pr-2 pb-2 mt-2">View on
           Github</a>
       </div>
