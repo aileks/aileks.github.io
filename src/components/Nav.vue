@@ -1,7 +1,9 @@
 <script setup>
+import {ref} from 'vue';
 import {useRoute} from 'vue-router';
-import NavLink from "./NavLink.vue";
+import NavLink from './NavLink.vue';
 
+const route = useRoute();
 </script>
 
 <template>
@@ -12,25 +14,25 @@ import NavLink from "./NavLink.vue";
            src="/images/logo.png"/>
 
       <section class="flex space-x-4">
-        <NavLink :active="currentPage === 'Home'"
+        <NavLink :active="route.name === 'home'"
           to="/"
         >
           Home
         </NavLink>
 
-        <NavLink 
+        <NavLink :active="route.name === 'about'"
           to="/about"
         >
           About
         </NavLink>
 
-        <NavLink
+        <NavLink :active="route.name === 'skills'"
           to="/skills"
         >
           Skills
         </NavLink>
 
-        <NavLink
+        <NavLink :active="route.name === 'projects'"
           to="/projects"
         >
           Projects
