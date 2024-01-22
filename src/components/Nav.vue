@@ -1,6 +1,7 @@
 <script setup>
 import {useRoute} from 'vue-router';
 import NavLink from "./NavLink.vue";
+
 </script>
 
 <template>
