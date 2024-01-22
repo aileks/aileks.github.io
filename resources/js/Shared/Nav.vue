@@ -8,7 +8,7 @@ import NavLink from '@/Shared/NavLink.vue'
       <img alt="Logo" class="object-scale-down max-h-8 rounded-lg" src="../../../public/images/logo.png"/>
       <section class="flex space-x-4">
         <NavLink :active="$page.component === 'About'" href="/">About</NavLink>
-        <NavLink :active="$page.component === 'Technologies'" href="/technologies">Technologies</NavLink>
+        <NavLink :active="$page.component === 'Skills'" href="/skills">Skills</NavLink>
         <NavLink :active="$page.component === 'Resume'" href="/resume">Resume</NavLink>
       </section>
       <section>
