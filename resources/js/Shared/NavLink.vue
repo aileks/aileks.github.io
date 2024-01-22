@@ -5,8 +5,8 @@ defineProps({
 </script>
 
 <template>
-  <Link :class="{'italic bg-slate-500 border border-slate-200 rounded-lg': active}"
-        class="text-slate-200 border border-transparent hover:bg-slate-500 hover:border hover:border-slate-200 px-2 py-1 hover:rounded-lg">
+  <Link :class="{'italic bg-[#a39ba8] border border-[#edf5fc] rounded-lg': active}"
+        class="text-[#edf5fc] border border-transparent hover:bg-[#a39ba8] hover:border hover:border-slate-200 px-2 py-1 hover:rounded-lg">
     <slot/>
   </Link>
 </template>

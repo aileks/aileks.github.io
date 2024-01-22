@@ -16,7 +16,7 @@ onMounted(() => {
       enter-from-class="-translate-y-20 opacity-0"
       enter-to-class="translate-y-0 opacity-100"
   >
-    <div v-if="animate" class="flex items-center min-h-screen">
+    <div v-if="animate" class="flex flex-col justify-center items-center min-h-screen">
       <slot/>
     </div>
   </Transition>
