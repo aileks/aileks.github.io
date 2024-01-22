@@ -12,7 +12,7 @@ onMounted(() => {
 onBeforeRouteLeave(() => {
   animate.value = false;
   return new Promise((resolve) => {
-    setTimeout(resolve, 300)
+    setTimeout(resolve, 500)
   });
 });
 </script>

@@ -13,7 +13,6 @@ html {
 
 body {
     @apply bg-[#edf5fc];
-    overflow-y: hidden;
 }
 
 @media (max-width: 600px) {
