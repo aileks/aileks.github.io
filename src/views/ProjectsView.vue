@@ -1,18 +1,10 @@
 <script setup>
 import Layout from '@/components/Layout.vue';
-
-const openModal = (images) => {
-  openImage = images;
-};
-
-const closeModal = () => {
-  openImage = null;
-};
 </script>
 
 <template>
   <Layout>
-    <header class="flex">
+    <header class="flex mt-4">
       <h1 class="text-2xl text-[#272d2d] font-bold mb-8 px-4 sm:px-6 lg:px-8 max-w-prose text-justify">
         My Personal Projects
       </h1>
@@ -29,7 +21,7 @@ const closeModal = () => {
           This very website built using <b>Vue!</b>
         </p>
 
-        <a href="https://github.com/aileks/aileks.github.io" target="_blank"
+        <a href="https://github.com/aileks/aileks.github.io"
           class="text-[#272d2d] text-sm font-bold hover:underline top-0 right-0 absolute pr-2 pb-2 mt-2">View on
           Github</a>
       </div>
@@ -40,7 +32,8 @@ const closeModal = () => {
         <img class="mb-4 w-full h-auto max-h-60 object-cover rounded-lg shadow-lg"
           src="../../images/etch-a-sketch-example.png" />
 
-        <p>A fun project written in <b>vanilla JavaScript</b> that recreates the etch-a-sketch experience on the web.
+        <p>
+          A fun project written in <b>vanilla JavaScript</b> that recreates the etch-a-sketch experience on the web.
           Has <b>responsive design</b> for mobile.
         </p>
 
@@ -80,14 +73,5 @@ const closeModal = () => {
   &:hover {
     transform: scale(1.02);
   }
-}
-
-.image-scroll-container {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.image-container {
-  display: inline-flex;
 }
 </style>

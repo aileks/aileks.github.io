@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "aileks.github.io",
   "version": "1.0.0",
   "private": true,
   "homepage": "https://aileks.github.io/",
@@ -9,7 +9,7 @@
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build"
   },
   "dependencies": {
     "pinia": "^2.1.7",
