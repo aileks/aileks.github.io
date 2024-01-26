@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    height: 100%;
-    min-width: 0;
+* {
+  min-width: 0;
 }
 
 html {
-    @apply antialiased;
-    @apply text-[#272d2d];
+  @apply antialiased;
+  @apply text-[#272d2d];
 }
 
 body {
-    @apply bg-[#edf5fc];
+  @apply bg-[#edf5fc];
 }

@@ -1,17 +1,18 @@
 <script setup>
-import {RouterLink} from "vue-router";
+import { RouterLink } from "vue-router";
 
 defineProps({
-  active: Boolean
-})
+  active: Boolean,
+});
 </script>
 
 <template>
   <RouterLink
-    :class="{'italic bg-[#a39ba8] border border-[#edf5fc] rounded-lg': active}"
-    class="text-[#edf5fc] border border-transparent hover:bg-[#a39ba8] hover:border hover:border-slate-200 px-2 py-1 hover:rounded-lg"
+    :class="{
+      'rounded-lg border border-[#edf5fc] bg-[#a39ba8] italic': active,
+    }"
+    class="border border-transparent px-2 py-1 text-[#edf5fc] hover:rounded-lg hover:border hover:border-slate-200 hover:bg-[#a39ba8]"
   >
     <slot />
   </RouterLink>
 </template>
-

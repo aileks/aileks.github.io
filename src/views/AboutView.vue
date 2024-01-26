@@ -4,6 +4,7 @@ import Layout from "@/components/Layout.vue";
 
 <template>
   <Layout>
+    <div class="flex flex-col sm:mt-8 lg:mt-32">
     <h1 class="text-2xl text-[#272d2d] mb-4 font-bold mx-auto px-4 sm:px-6 lg:px-8 max-w-prose text-justify">
       I'm Aaliyah.
     </h1>
@@ -19,13 +20,14 @@ import Layout from "@/components/Layout.vue";
           <li>Advocate for diversity in STEM.</li>
           <li>Won't quit until a problem is solved.</li>
           <li>Advocate for digital privacy and open-source software.</li>
+          <li>Addicted to learning.</li>
         </ul>
       </p>
 
-      <p class='text-md text-center mt-4'>
-        Outside of tech, I'm a mom, a home cook, and a music nerd. Oh, and I game a little on the side.
+      <p class=' text-center mt-8'>
+        Outside of tech, I'm a mom who enjoys cooking and has a nerdy interest music.
       </p>
-    </div>
+    </div></div>
   </Layout>
 </template>
 

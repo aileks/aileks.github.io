@@ -4,13 +4,15 @@ import Layout from "@/components/Layout.vue";
 
 <template>
   <Layout>
+    <div class="sm:mt-8 lg:mt-32">
       <header class="text-[#272d2d]">
-        <h1 class="text-2xl text-center font-bold mb-8">My Knowledge</h1>
+        <h1 class="mb-8 text-center text-2xl font-bold">My Knowledge</h1>
       </header>
 
-      <div class="mb-8 pb-8 space-y-8">
+      <div class="mx-2 mb-8 space-y-8 pb-8">
         <div
-          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 drop-shadow-md text-center overflow-y">
+          class="overflow-y grid grid-cols-2 gap-4 text-center drop-shadow-md sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
           <span class="skill">🐧 Linux</span>
           <span class="skill">💻 Bash</span>
           <span class="skill">🌐 HTML</span>
@@ -27,11 +29,13 @@ import Layout from "@/components/Layout.vue";
 
         <footer>
           <p class="font-sm text-center italic">
-            All featured skills were acquired through self-directed learning and personal initiative.
+            All featured skills were acquired through self-directed learning and
+            personal initiative.
           </p>
         </footer>
       </div>
-    </Layout>
+    </div>
+  </Layout>
 </template>
 
 <style scoped>
