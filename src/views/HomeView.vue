@@ -1,18 +1,23 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
 import Nav from "@/components/Nav.vue";
 
 const animate = ref(false);
 
 onMounted(() => {
+  document.body.style.overflow = "hidden";
   animate.value = true;
+});
+
+onBeforeUnmount(() => {
+  document.body.style.overflow = "auto";
 });
 
 onBeforeRouteLeave(() => {
   animate.value = false;
   return new Promise((resolve) => {
-    setTimeout(resolve, 500);
+    setTimeout(resolve, 300);
   });
 });
 </script>
@@ -28,17 +33,14 @@ onBeforeRouteLeave(() => {
     leave-to-class="opacity-0"
     leave-from-class="opacity-100"
   >
-    <div
-      v-show="animate"
-      class="flex items-center justify-center overflow-hidden"
-    >
+    <div v-show="animate" class="flex items-center justify-center">
       <img
         src="../../images/city.jpeg"
         alt="city"
-        class="relative h-1/2 w-full object-cover brightness-50 contrast-75 -hue-rotate-30"
+        class="relative h-full w-full blur-[4px] brightness-50 contrast-100 -hue-rotate-15"
       />
       <div
-        class="absolute top-1/3 rounded-md bg-[#272d2d] bg-opacity-70 p-8 text-center text-white backdrop-blur-sm"
+        class="absolute top-1/3 rounded-md bg-[#272d2d] bg-opacity-70 p-8 text-center text-[#edf5fc]"
       >
         <h1 class="text-2xl">Web development with passion.</h1>
         <h2 class="mt-4 text-xl italic">Based in Florida.</h2>

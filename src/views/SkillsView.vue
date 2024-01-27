@@ -4,7 +4,7 @@ import Layout from "@/components/Layout.vue";
 
 <template>
   <Layout>
-    <div class="sm:mt-8 lg:mt-32">
+    <div class="mx-4 mt-8 flex flex-col sm:mt-10 lg:mt-32">
       <header class="text-[#272d2d]">
         <h1 class="mb-8 text-center text-2xl font-bold">My Knowledge</h1>
       </header>

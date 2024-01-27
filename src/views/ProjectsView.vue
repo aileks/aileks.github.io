@@ -5,18 +5,18 @@ import Layout from "@/components/Layout.vue";
 <template>
   <Layout>
     <div
-      class="page-container mt-12 flex flex-col items-center justify-center pt-4 text-center"
+      class="page-container mt-8 flex flex-col items-center justify-center pt-4 text-center lg:mt-16"
     >
       <header>
         <h1
-          class="mb-8 max-w-prose px-4 text-justify text-2xl font-bold text-[#272d2d] sm:px-6 lg:px-8"
+          class="mb-4 max-w-prose text-justify text-2xl font-bold text-[#272d2d]"
         >
           My Projects
         </h1>
       </header>
 
       <div
-        class="m-4 flex flex-col justify-items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
+        class="ify-items-center m-4 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
       >
         <div class="project-card w-full sm:w-auto">
           <h1 class="mb-4 text-lg font-bold">My Website</h1>
@@ -55,6 +55,17 @@ import Layout from "@/components/Layout.vue";
           <a
             class="mt-2 text-xs font-bold text-[#272d2d] hover:underline sm:block"
             href="https://github.com/aileks/etch-a-sketch"
+            >View on Github</a
+          >
+        </div>
+
+        <div class="project-card w-full sm:w-auto">
+          <h1 class="mb-4 text-lg font-bold">Mock Blog</h1>
+          <img src="../../images/mock-blog.png" />
+          <p>A mock blog created using <b>Laravel</b> and Blade templating.</p>
+          <a
+            class="mt-2 text-xs font-bold text-[#272d2d] hover:underline sm:block"
+            href="https://github.com/aileks/mock-blog"
             >View on Github</a
           >
         </div>
