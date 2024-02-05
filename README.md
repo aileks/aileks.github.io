@@ -1,3 +1,3 @@
 # Portfolio
 
-React port of original site underway.
+React (Next.js) port of original site underway.
