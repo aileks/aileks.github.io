@@ -12,18 +12,14 @@ export default function Nav() {
         >
           Home
         </Link>
+
         <Link
           className="hover:underline hover:text-gray-700 hover:italic"
           href="/about"
         >
           About
         </Link>
-        <Link
-          className="hover:underline hover:text-gray-700 hover:italic"
-          href="/skills"
-        >
-          Skills
-        </Link>
+
         <Link
           className="hover:underline hover:text-gray-700 hover:italic"
           href="/projects"
