@@ -1,4 +1,4 @@
-import PageLayout from '@/layouts/PageLayout';
+import PageLayout from '@/layouts/page-layout';
 
 interface Project {
   id: number;
