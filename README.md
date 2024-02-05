@@ -1,3 +1,3 @@
-# Personal Website
+# Portfolio
 
-My personal website built with Vue.js and TailwindCSS.
+React port of original site underway.
