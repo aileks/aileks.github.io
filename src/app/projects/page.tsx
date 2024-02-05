@@ -1,5 +1,3 @@
-import PageLayout from '@/layouts/page-layout';
-
 interface Project {
   id: number;
   title: string;
@@ -27,17 +25,15 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <PageLayout>
-      <main className="flex flex-col justify-center items-center">
-        <h1>Projects</h1>
-        <ul>
-          {projects.map((project) => (
-            <li key={project.id}>
-              <a href={`/projects/${project.id}`}>{project.title}</a>
-            </li>
-          ))}
-        </ul>
-      </main>
-    </PageLayout>
+    <main className="flex flex-col justify-center items-center">
+      <h1>Projects</h1>
+      <ul>
+        {projects.map((project) => (
+          <li key={project.id}>
+            <a href={`/projects/${project.id}`}>{project.title}</a>
+          </li>
+        ))}
+      </ul>
+    </main>
   );
 }

@@ -1,104 +1,143 @@
-import PageLayout from '@/layouts/page-layout';
+import Image from 'next/image';
 
 export default function About() {
   return (
-    <PageLayout>
-      <div className="flex justify-center h-[80vh] items-center">
-        <div className="flex flex-col flex-1 justify-center h-full max-w-90 text-center items-center">
-          <div className="max-w-prose space-y-8">
-            {/* Heading */}
-            <h1 className="max-w-prose pb-6 my-auto text-center text-2xl font-bold">
-              Hi! I'm Aaliyah.
-            </h1>
+    <div className="flex justify-center h-[80vh] items-center">
+      <div className="flex flex-col flex-1 justify-center h-full max-w-90 text-center items-center">
+        <div className="max-w-prose space-y-8">
+          {/* Heading */}
+          <h1 className="max-w-prose pb-3 my-auto text-center text-2xl font-bold">
+            Hi! I'm Aaliyah.
+          </h1>
 
-            {/* About */}
-            <p className="text-lg pt-12 text-center">
-              I'm a current ASU student pursuing a B.S. in Software Engineering
-              with a passion for technology and the web as a platform. Ever
-              since I was a kid I've been tinkering with gadgets and teaching
-              myself things. My passion for tech drives me and I'm always
-              looking to grow and improve.
-            </p>
+          {/* Skills */}
+          <section className="flex items-center">
+            <div className="h-auto justify-center w-full flex-wrap flex space-x-2">
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/linux.svg"
+                alt="Linux"
+              />
 
-            <section className="h-3/5 flex items-center">
-              {/* Skills */}
-              <div className="h-auto justify-center w-full mt-8 flex-wrap flex space-x-2">
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/linux.svg" alt="Linux" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/bash.svg"
+                alt="Bash"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/bash.svg" alt="Bash" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/html.svg"
+                alt="HTML"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/html.svg" alt="HTML" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/css.svg"
+                alt="CSS"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/css.svg" alt="CSS" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/javascript.svg"
+                alt="JavaScript"
+              />
 
-                <span className="h-16 w-16">
-                  <img
-                    className="invert"
-                    src="img/javascript.svg"
-                    alt="JavaScript"
-                  />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/typescript.svg"
+                alt="TypeScript"
+              />
 
-                <span className="h-16 w-16">
-                  <img
-                    className="invert"
-                    src="img/typescript.svg"
-                    alt="TypeScript"
-                  />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/php.svg"
+                alt="PHP"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/php.svg" alt="PHP" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/java.svg"
+                alt="Java"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/java.svg" alt="Java" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/tailwindcss.svg"
+                alt="TailwindCSS"
+              />
 
-                <span className="h-16 w-16">
-                  <img
-                    className="invert"
-                    src="img/tailwindcss.svg"
-                    alt="TailwindCSS"
-                  />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/node.svg"
+                alt="Node.js"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/node.svg" alt="Node.js" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/react.svg"
+                alt="React"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/react.svg" alt="React" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/next.svg"
+                alt="Next.js"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/next.svg" alt="Next.js" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/vue.svg"
+                alt="Vue.js"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/vue.svg" alt="Vue.js" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/laravel.svg"
+                alt="Laravel"
+              />
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/laravel.svg" alt="Laravel" />
-                </span>
+              <Image
+                className="invert"
+                width={32}
+                height={32}
+                src="img/mysql.svg"
+                alt="MySQL"
+              />
+            </div>
+          </section>
 
-                <span className="h-16 w-16">
-                  <img className="invert" src="img/mysql.svg" alt="MySQL" />
-                </span>
-              </div>
-            </section>
-          </div>
+          {/* About */}
         </div>
       </div>
-    </PageLayout>
+    </div>
   );
 }
