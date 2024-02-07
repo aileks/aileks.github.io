@@ -44,12 +44,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Image
+      <img
         alt="branches with leaves in the background"
-        src="/img/branches.svg"
-        width={100}
-        height={100}
-        className="absolute top-0 left-0 right-0 w-full z-[-1] opacity-5 faint-image"
+        src="/branches.svg"
+        className="absolute h-screen z-[-1] opacity-5"
       />
       <motion.header
         initial={{ y: '-10', opacity: 0 }}
@@ -140,16 +138,16 @@ export default function Home() {
           <Link href="https://github.com/aileks">
             <img
               alt="github logo"
-              src="/img/github-mark-white.png"
-              className="ml-2"
+              src="/github-mark-white.png"
+              className="ml-2 footer-img"
             />
           </Link>
 
           <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/">
             <img
               alt="linkedin logo"
-              src="/img/linkedin-white.png"
-              className="ml-2"
+              src="/linkedin-white.png"
+              className="ml-2 footer-img"
             />
           </Link>
         </span>

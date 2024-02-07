@@ -12,7 +12,6 @@ body {
   background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
   background-size: 400% 400%;
   padding: 0 1rem;
-  overflow: hidden;
 }
 
 .header-container,
@@ -21,7 +20,7 @@ body {
   flex-grow: 1;
 }
 
-img {
+.footer-img {
   width: 14px;
   height: 14px;
 }
@@ -109,9 +108,5 @@ img {
     max-width: 90vw;
     max-height: 90vh;
     overflow: auto;
-  }
-
-  .faint-image {
-    display: none;
   }
 }
