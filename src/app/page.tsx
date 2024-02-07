@@ -117,7 +117,7 @@ export default function Home() {
           <li className="ml-1">
             <AnimatedLink
               href={'https://github.com/aileks/etch-a-sketch'}
-              text={'Livewire To-Do'}
+              text={'Etch-a-Sketch'}
             />
             <p className="text-sm mt-1">
               One of my first projects ever and I&apos;m still proud of it. Uses
