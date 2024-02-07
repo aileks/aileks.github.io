@@ -138,22 +138,18 @@ export default function Home() {
         <span className="text-sm italic">Made with 💪 by Aaliyah</span>
         <span className="flex">
           <Link href="https://github.com/aileks">
-            <Image
+            <img
               alt="github logo"
               src="/img/github-mark-white.png"
-              width={14}
-              height={14}
-              className="ml-2 w-auto h-auto"
+              className="ml-2 w-4"
             />
           </Link>
 
           <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/">
-            <Image
+            <img
               alt="linkedin logo"
               src="/img/linkedin-white.png"
-              width={14}
-              height={14}
-              className="ml-2 w-auto h-auto"
+              className="ml-2 w-4"
             />
           </Link>
         </span>
