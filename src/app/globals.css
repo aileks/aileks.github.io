@@ -11,7 +11,14 @@ body {
     color: white;
     background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
     background-size: 400% 400%;
+    padding: 0 1rem;
     overflow: hidden;
+}
+
+.header-container,
+.about-container,
+.projects-container {
+    flex-grow: 1;
 }
 
 @layer utilities {
@@ -78,15 +85,26 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    h1, h2, h3 {
+@media (max-height: 800px) {
+    body {
+        padding: 0 1rem;
+        overflow: auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+    h1,
+    h2,
+    h3 {
         text-align: center;
     }
 
     body {
-        overflow: auto;
-        padding: 0 12px;
+        padding: 0 1rem;
+        max-width: 90vw;
         max-height: 90vh;
+        overflow: auto;
     }
 
     .faint-image {

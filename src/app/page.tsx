@@ -54,7 +54,7 @@ export default function Home() {
       <motion.header
         initial={{y: '-10', opacity: 0}}
         animate={headerControls}
-        className="mb-8"
+        className="header-container mb-8"
       >
         <h1 className="text-5xl font-bold flex flex-col mt-12">
           <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.fuchsia.400),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
