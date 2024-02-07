@@ -2,63 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font config */
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
 * {
   @apply antialiased;
   font-family: 'Josefin Sans', sans-serif;
@@ -79,17 +22,74 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
+  background-size: 400% 400%;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  overflow: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
   }
 }

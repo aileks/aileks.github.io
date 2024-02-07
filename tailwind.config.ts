@@ -23,6 +23,9 @@ const config: Config = {
           },
         },
       },
+      fontFamily: {
+        sans: ['Josefin Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
