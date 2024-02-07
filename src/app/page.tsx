@@ -2,19 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import FollowCursor from './components/followCursor';
-import AnimatedBg from './components/animated-bg';
 
 export default function Home() {
   return (
     <>
-      <AnimatedBg />
-      {/* <Image */}
-      {/*   alt="branches with leaves in the background" */}
-      {/*   src="/img/branches-with-leaves.svg" */}
-      {/*   width={1920} */}
-      {/*   height={1080} */}
-      {/*   className="absolute top-0 left-0 right-0 w-full z-[-1] opacity-10" */}
-      {/* /> */}
+      <Image
+        alt="branches with leaves in the background"
+        src="/img/branches.svg"
+        width={1920}
+        height={1080}
+        className="absolute top-0 left-0 right-0 w-full z-[-1] opacity-5"
+      />
       <div className="flex flex-col w-full space-y-16 mt-4">
         <header>
           <h1 className="text-5xl font-bold mt-8 flex flex-col">
@@ -130,7 +128,7 @@ export default function Home() {
           <span> Add Github and LinkedIn here</span>
         </footer>
 
-        <FollowCursor />
+        <FollowCursor/>
       </div>
     </>
   );
