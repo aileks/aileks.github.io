@@ -12,6 +12,7 @@ body {
   background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
   background-size: 400% 400%;
   padding: 0 1rem;
+  overflow: clip;
 }
 
 .header-container,
