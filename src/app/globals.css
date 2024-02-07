@@ -7,20 +7,6 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
-
 body {
     color: white;
     background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
@@ -93,7 +79,17 @@ body {
 }
 
 @media (max-width: 600px) {
+    h1, h2, h3 {
+        text-align: center;
+    }
+
     body {
         overflow: auto;
+        padding: 0 12px;
+        max-height: 90vh;
+    }
+
+    .faint-image {
+        display: none;
     }
 }
