@@ -1,30 +1,47 @@
-'use client'
+'use client';
 
-import {useEffect} from "react";
+import {useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import FollowCursor from './components/followCursor';
 import AnimatedLink from './components/animated-link';
-import {motion, useAnimation} from "framer-motion";
+import {motion, useAnimation} from 'framer-motion';
 
 export default function Home() {
-  const headerControls = useAnimation()
-  const aboutControls = useAnimation()
-  const projectsControls = useAnimation()
-  const footerControls = useAnimation()
+  const headerControls = useAnimation();
+  const aboutControls = useAnimation();
+  const projectsControls = useAnimation();
+  const footerControls = useAnimation();
 
   useEffect(() => {
     const sequence = async () => {
-      await headerControls.start({y: 0, opacity: 1, transition: {duration: 0.7}});
+      await headerControls.start({
+        y: 0,
+        opacity: 1,
+        transition: {duration: 0.7},
+      });
       await Promise.all([
-        aboutControls.start({x: 0, opacity: 1, transition: {duration: 0.7}}),
-        projectsControls.start({x: 0, opacity: 1, transition: {duration: 0.7}})
+        aboutControls.start({
+          x: 0,
+          opacity: 1,
+          transition: {duration: 0.7},
+        }),
+        projectsControls.start({
+          x: 0,
+          opacity: 1,
+          transition: {duration: 0.7},
+        }),
       ]);
-      await footerControls.start({y: 0, opacity: 1, transition: {duration: 0.7}});
+      await footerControls.start({
+        y: 0,
+        opacity: 1,
+        transition: {duration: 0.7},
+      });
     };
 
     sequence();
-  }, []);
+  }, [aboutControls, footerControls, headerControls, projectsControls]);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Image
@@ -40,9 +57,9 @@ export default function Home() {
         className="mb-8"
       >
         <h1 className="text-5xl font-bold flex flex-col mt-12">
-            <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.fuchsia.400),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
-              Web Development
-            </span>
+          <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.fuchsia.400),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+            Web Development
+          </span>
 
           <span className="text-4xl font-bold italic">with Passion</span>
         </h1>
@@ -55,11 +72,11 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold mb-2">Who the h*ck am I?</h2>
         <p className="text-lg text-left">
-          My name is Aaliyah and I build stuff sometimes. I'm a Junior at ASU
-          pursuing a B.S. in Software Engineering while also learning things
-          on my own. I've been tinkering with things since childhood and it's
-          this passion and curiosity that drives me. My specialties are PHP
-          (including Laravel) and JavaScript (including Vue3 + Next.js).
+          My name is Aaliyah and I build stuff sometimes. I&apos;m a Junior at
+          ASU pursuing a B.S. in Software Engineering while also learning things
+          on my own. I&apos;ve been tinkering with things since childhood and
+          it&apos;s this passion and curiosity that drives me. My specialties
+          are PHP (including Laravel) and JavaScript (including Vue3 + Next.js).
         </p>
       </motion.div>
 
@@ -72,8 +89,9 @@ export default function Home() {
 
         <ul className="space-y-4">
           <li className="ml-1">
-            <AnimatedLink href={'https://www.quillify-app.com/'}
-                          text={'Quillify'}
+            <AnimatedLink
+              href={'https://www.quillify-app.com/'}
+              text={'Quillify'}
             />
             <p className="text-sm mt-1">
               A minimal web app book lovers can use to track their to-be-read
@@ -82,8 +100,9 @@ export default function Home() {
           </li>
 
           <li className="ml-1">
-            <AnimatedLink href={'https://github.com/aileks/livwire-todo'}
-                          text={'Livewire To-Do'}
+            <AnimatedLink
+              href={'https://github.com/aileks/livwire-todo'}
+              text={'Livewire To-Do'}
             />
             <p className="text-sm mt-1">
               Your usual to-do app, but built with{' '}
@@ -98,13 +117,14 @@ export default function Home() {
           </li>
 
           <li className="ml-1">
-            <AnimatedLink href={'https://github.com/aileks/etch-a-sketch'}
-                          text={'Livewire To-Do'}
+            <AnimatedLink
+              href={'https://github.com/aileks/etch-a-sketch'}
+              text={'Livewire To-Do'}
             />
             <p className="text-sm mt-1">
-              One of my first projects ever and I'm still proud of it. Uses
-              only HTML, CSS, and vanilla JavaScript while still keeping
-              modern UI elements you know and love.
+              One of my first projects ever and I&apos;m still proud of it. Uses
+              only HTML, CSS, and vanilla JavaScript while still keeping modern
+              UI elements you know and love.
             </p>
           </li>
         </ul>
@@ -113,7 +133,8 @@ export default function Home() {
       <motion.footer
         initial={{y: '-5', opacity: 0}}
         animate={footerControls}
-        className="flex mt-auto sm:pb-3 pb-1 lg:pb-1 md:pb-1 xl:pb-1 self-center">
+        className="flex mt-auto sm:pb-3 pb-1 lg:pb-1 md:pb-1 xl:pb-1 self-center"
+      >
         <span className="text-sm italic">Made with 💪 by Aaliyah</span>
         <span className="flex">
           <Link href="https://github.com/aileks">
