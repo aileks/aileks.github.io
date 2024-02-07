@@ -1,31 +1,29 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/cursor.css';
 
 const FollowCursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const handleMouseMove = (e: any) => {
-    setCursorPosition({ x: e.clientX, y: e.clientY });
+  const [cursorPosition, setCursorPosition] = useState({x: 0, y: 0});
+  const handleMouseMove = (e: MouseEvent): void => {
+    setCursorPosition({x: e.pageX, y: e.pageY});
   };
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove as EventListener);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove as EventListener);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
   return (
-    <div className="follow-cursor-container" onMouseMove={handleMouseMove}>
-      <div
-        className="follow-cursor"
-        style={{
-          top: cursorPosition.y - 350,
-          left: cursorPosition.x - 695,
-        }}
-      ></div>
-    </div>
+    <div
+      className="follow-cursor"
+      style={{
+        top: cursorPosition.y - 250,
+        left: cursorPosition.x - 250,
+      }}
+    ></div>
   );
 };
 
