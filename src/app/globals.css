@@ -106,7 +106,6 @@ body {
 
   body {
     padding: 0 1rem;
-    max-width: 90vw;
     max-height: 90vh;
     overflow: auto;
   }

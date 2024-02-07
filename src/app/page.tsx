@@ -47,7 +47,7 @@ export default function Home() {
       <img
         alt="branches with leaves in the background"
         src="/branches.svg"
-        className="absolute h-screen z-[-1] opacity-5"
+        className="absolute h-screen z-[-1] opacity-5 bg-fixed"
       />
       <motion.header
         initial={{ y: '-10', opacity: 0 }}
@@ -86,7 +86,7 @@ export default function Home() {
         <h2 className="text-3xl mb-2 font-bold">Projects</h2>
 
         <ul className="space-y-4">
-          <li className="ml-1">
+          <li>
             <AnimatedLink
               href={'https://www.quillify-app.com/'}
               text={'Quillify'}
@@ -97,7 +97,7 @@ export default function Home() {
             </p>
           </li>
 
-          <li className="ml-1">
+          <li>
             <AnimatedLink
               href={'https://github.com/aileks/livwire-todo'}
               text={'Livewire To-Do'}
@@ -114,7 +114,7 @@ export default function Home() {
             </p>
           </li>
 
-          <li className="ml-1">
+          <li>
             <AnimatedLink
               href={'https://github.com/aileks/etch-a-sketch'}
               text={'Etch-a-Sketch'}
