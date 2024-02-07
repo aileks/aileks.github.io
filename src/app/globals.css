@@ -3,111 +3,115 @@
 @tailwind utilities;
 
 * {
-    @apply antialiased;
-    font-family: 'Josefin Sans', sans-serif;
+  @apply antialiased;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    color: white;
-    background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
-    background-size: 400% 400%;
-    padding: 0 1rem;
-    overflow: hidden;
+  color: white;
+  background: linear-gradient(45deg, #000000, #2a2a2a, #000000);
+  background-size: 400% 400%;
+  padding: 0 1rem;
+  overflow: hidden;
 }
 
 .header-container,
 .about-container,
 .projects-container {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+
+img {
+  width: 14px;
+  height: 14px;
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
 @layer base {
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
-        font-weight: 400;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
-        font-weight: 500;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-SemiBold.ttf') format('truetype');
-        font-weight: 600;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-Bold.ttf') format('truetype');
-        font-weight: 700;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-Italic.ttf') format('truetype');
-        font-weight: 400;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
-        font-weight: 500;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-SemiBoldItalic.ttf') format('truetype');
-        font-weight: 600;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+  }
 
-    @font-face {
-        font-family: 'Josefin Sans';
-        src: url('/fonts/JosefinSans-BoldItalic.ttf') format('truetype');
-        font-weight: 700;
-        font-style: italic;
-    }
+  @font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
 }
 
 @media (max-height: 800px) {
-    body {
-        padding: 0 1rem;
-        overflow: auto;
-    }
-
+  body {
+    padding: 0 1rem;
+    overflow: auto;
+  }
 }
 
 @media (max-width: 800px) {
-    h1,
-    h2,
-    h3 {
-        text-align: center;
-    }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
 
-    body {
-        padding: 0 1rem;
-        max-width: 90vw;
-        max-height: 90vh;
-        overflow: auto;
-    }
+  body {
+    padding: 0 1rem;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+  }
 
-    .faint-image {
-        display: none;
-    }
+  .faint-image {
+    display: none;
+  }
 }

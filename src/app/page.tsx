@@ -1,11 +1,11 @@
 'use client';
 
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import FollowCursor from './components/followCursor';
 import AnimatedLink from './components/animated-link';
-import {motion, useAnimation} from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 export default function Home() {
   const headerControls = useAnimation();
@@ -18,24 +18,24 @@ export default function Home() {
       await headerControls.start({
         y: 0,
         opacity: 1,
-        transition: {duration: 0.7},
+        transition: { duration: 0.7 },
       });
       await Promise.all([
         aboutControls.start({
           x: 0,
           opacity: 1,
-          transition: {duration: 0.7},
+          transition: { duration: 0.7 },
         }),
         projectsControls.start({
           x: 0,
           opacity: 1,
-          transition: {duration: 0.7},
+          transition: { duration: 0.7 },
         }),
       ]);
       await footerControls.start({
         y: 0,
         opacity: 1,
-        transition: {duration: 0.7},
+        transition: { duration: 0.7 },
       });
     };
 
@@ -52,7 +52,7 @@ export default function Home() {
         className="absolute top-0 left-0 right-0 w-full z-[-1] opacity-5 faint-image"
       />
       <motion.header
-        initial={{y: '-10', opacity: 0}}
+        initial={{ y: '-10', opacity: 0 }}
         animate={headerControls}
         className="header-container mb-8"
       >
@@ -66,7 +66,7 @@ export default function Home() {
       </motion.header>
 
       <motion.div
-        initial={{x: '10', opacity: 0}}
+        initial={{ x: '10', opacity: 0 }}
         animate={aboutControls}
         className="about-container self-end max-w-md mb-8 mt-2"
       >
@@ -81,7 +81,7 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        initial={{x: '-10', opacity: 0}}
+        initial={{ x: '-10', opacity: 0 }}
         animate={projectsControls}
         className="projects-container w-96 mb-8 mt-2"
       >
@@ -131,7 +131,7 @@ export default function Home() {
       </motion.div>
 
       <motion.footer
-        initial={{y: '-5', opacity: 0}}
+        initial={{ y: '-5', opacity: 0 }}
         animate={footerControls}
         className="flex mt-auto sm:pb-3 pb-1 lg:pb-1 md:pb-1 xl:pb-1 self-center"
       >
@@ -141,7 +141,7 @@ export default function Home() {
             <img
               alt="github logo"
               src="/img/github-mark-white.png"
-              className="ml-2 w-4"
+              className="ml-2"
             />
           </Link>
 
@@ -149,13 +149,13 @@ export default function Home() {
             <img
               alt="linkedin logo"
               src="/img/linkedin-white.png"
-              className="ml-2 w-4"
+              className="ml-2"
             />
           </Link>
         </span>
       </motion.footer>
 
-      <FollowCursor/>
+      <FollowCursor />
     </div>
   );
 }
