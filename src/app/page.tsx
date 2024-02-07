@@ -136,23 +136,23 @@ export default function Home() {
         className="flex mt-auto sm:pb-3 pb-1 lg:pb-1 md:pb-1 xl:pb-1 self-center"
       >
         <span className="text-sm italic">Made with 💪 by Aaliyah</span>
-        <span className="flex">
-          <Link href="https://github.com/aileks">
-            <img
-              alt="github logo"
-              src="/img/github-mark-white.png"
-              className="ml-2"
-            />
-          </Link>
+        {/* <span className="flex"> */}
+        {/*   <Link href="https://github.com/aileks"> */}
+        {/*     <img */}
+        {/*       alt="github logo" */}
+        {/*       src="/img/github-mark-white.png" */}
+        {/*       className="ml-2" */}
+        {/*     /> */}
+        {/*   </Link> */}
 
-          <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/">
-            <img
-              alt="linkedin logo"
-              src="/img/linkedin-white.png"
-              className="ml-2"
-            />
-          </Link>
-        </span>
+        {/*   <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/"> */}
+        {/*     <img */}
+        {/*       alt="linkedin logo" */}
+        {/*       src="/img/linkedin-white.png" */}
+        {/*       className="ml-2" */}
+        {/*     /> */}
+        {/*   </Link> */}
+        {/* </span> */}
       </motion.footer>
 
       <FollowCursor />
