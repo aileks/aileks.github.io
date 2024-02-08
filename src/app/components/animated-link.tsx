@@ -1,33 +1,32 @@
 'use client';
 
-import React from "react";
+import React from 'react';
 import Link from 'next/link';
-import {motion, useAnimation} from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 type AnimatedLinkProps = {
   href: string;
   text: string;
 };
 
-const AnimatedLink: React.FC<AnimatedLinkProps> = ({href, text}) => {
+const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
   const controls = useAnimation();
 
   const startAnimation = () => {
     controls.start({
       x: 4,
       y: -4,
-      transition: {duration: 0.2},
+      transition: { duration: 0.2 },
     });
-  }
+  };
 
   const stopAnimation = () => {
     controls.start({
       x: 0,
       y: 0,
-      transition: {duration: 0.1},
-    })
-  }
-
+      transition: { duration: 0.1 },
+    });
+  };
 
   return (
     <Link
@@ -36,7 +35,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({href, text}) => {
       onMouseEnter={startAnimation}
       onMouseLeave={stopAnimation}
     >
-      <span className="hover:border-b border-white inline-flex items-center">
+      <span className="hover:italic inline-flex items-center">
         {text}
         <motion.svg
           animate={controls}
