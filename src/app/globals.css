@@ -26,6 +26,10 @@ body {
   height: 14px;
 }
 
+.hover-effect:hover {
+  filter: drop-shadow(3px 3px #a6cfd5) drop-shadow(-3px -3px #735290);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

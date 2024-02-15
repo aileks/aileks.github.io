@@ -68,6 +68,7 @@ export default function Home() {
           className="about-container self-end max-w-md mb-8 mt-2"
         >
           <h2 className="text-3xl font-bold mb-4">Who the h*ck am I?</h2>
+
           <p className="text-lg text-left">
             My name is Aaliyah and I build stuff. I&apos;m a Junior at ASU
             pursuing a B.S. in Software Engineering while also learning things
@@ -145,7 +146,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="white"
-                className="w-7 h-7 mb-0.5"
+                className="hover-effect w-7 h-7 mb-0.5"
               >
                 <path
                   stroke-linecap="round"
@@ -159,7 +160,7 @@ export default function Home() {
               <img
                 src="github-mark-white.png"
                 alt="Hithub Inverticat logo"
-                className="w-5 h-5 mb-1"
+                className="hover-effect w-5 h-5 mb-1"
               />
             </Link>
 
@@ -167,7 +168,7 @@ export default function Home() {
               <img
                 src="linkedin-white.png"
                 alt="LinkedIn logo in white"
-                className="w-5 h-5 mb-1"
+                className="hover-effect w-5 h-5 mb-1"
               />
             </Link>
           </nav>
