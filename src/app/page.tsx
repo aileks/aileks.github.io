@@ -47,16 +47,18 @@ export default function Home() {
       <FollowCursor />
       <div className="flex flex-col min-h-screen">
         <motion.header
-          initial={{ y: '-10', opacity: 0 }}
+          initial={{ y: '-25', opacity: 0 }}
           animate={headerControls}
           className="header-container mb-8"
         >
           <h1 className="text-5xl font-bold flex flex-col mt-12">
             <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.fuchsia.400),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
-              Web Development
+              Unraveling digital puzzles
             </span>
 
-            <span className="text-4xl font-bold italic">with Passion</span>
+            <span className="text-4xl font-bold italic">
+              one pixel at time.
+            </span>
           </h1>
         </motion.header>
 
@@ -65,7 +67,7 @@ export default function Home() {
           animate={aboutControls}
           className="about-container self-end max-w-md mb-8 mt-2"
         >
-          <h2 className="text-3xl font-bold mb-2">Who the h*ck am I?</h2>
+          <h2 className="text-3xl font-bold mb-4">Who the h*ck am I?</h2>
           <p className="text-lg text-left">
             My name is Aaliyah and I build stuff. I&apos;m a Junior at ASU
             pursuing a B.S. in Software Engineering while also learning things
@@ -81,7 +83,7 @@ export default function Home() {
           animate={projectsControls}
           className="projects-container w-96 mb-8 mt-2"
         >
-          <h2 className="text-3xl mb-2 font-bold">Projects</h2>
+          <h2 className="text-3xl mb-4 font-bold">Projects</h2>
 
           <ul className="space-y-4">
             <li>
@@ -91,7 +93,8 @@ export default function Home() {
               />
               <p className="text-sm mt-1">
                 A minimal web app book lovers can use to track their to-be-read
-                lists! Currently in alpha.
+                lists! Has graphs to visualize your book tracking data.
+                Currently in alpha.
               </p>
             </li>
 
@@ -135,35 +138,29 @@ export default function Home() {
             <p className="italic">© 2024 - Aaliyah Harper</p>
           </aside>
           <nav className="flex space-x-2 items-center md:place-self-center md:justify-self-end">
+            <Link href="mailto:aeverly14@protonmail.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                className="w-7 h-7 mb-0.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+            </Link>
+
             <Link href="https://github.com/aileks">
               <img
                 src="github-mark-white.png"
                 alt="Hithub Inverticat logo"
                 className="w-5 h-5 mb-1"
               />
-            </Link>
-
-            <Link href="mailto:aeverly14@protonmail.com">
-              <svg
-                className="invert mb-0.5"
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="style=fill">
-                  <g id="email">
-                    <path
-                      id="Subtract"
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M7 2.75C5.38503 2.75 3.92465 3.15363 2.86466 4.1379C1.79462 5.13152 1.25 6.60705 1.25 8.5V15.5C1.25 17.393 1.79462 18.8685 2.86466 19.8621C3.92465 20.8464 5.38503 21.25 7 21.25H17C18.615 21.25 20.0754 20.8464 21.1353 19.8621C22.2054 18.8685 22.75 17.393 22.75 15.5V8.5C22.75 6.60705 22.2054 5.13152 21.1353 4.1379C20.0754 3.15363 18.615 2.75 17 2.75H7ZM19.2285 8.3623C19.5562 8.10904 19.6166 7.63802 19.3633 7.31026C19.1101 6.98249 18.6391 6.9221 18.3113 7.17537L12.7642 11.4616C12.3141 11.8095 11.6858 11.8095 11.2356 11.4616L5.6886 7.17537C5.36083 6.9221 4.88982 6.98249 4.63655 7.31026C4.38328 7.63802 4.44367 8.10904 4.77144 8.3623L10.3185 12.6486C11.3089 13.4138 12.691 13.4138 13.6814 12.6486L19.2285 8.3623Z"
-                      fill="#000000"
-                    />
-                  </g>
-                </g>
-              </svg>
             </Link>
 
             <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/">

@@ -32,6 +32,7 @@ body {
   }
 }
 
+/** Fonts */
 @layer base {
   @font-face {
     font-family: 'Josefin Sans';
