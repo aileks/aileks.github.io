@@ -10,7 +10,7 @@
 body {
   color: white;
   background: linear-gradient(30deg, #000000, #2a2a2a, #000000);
-  background-size: 300% 300%;
+  background-size: 200% 200%;
   padding: 0 1rem;
   overflow: clip;
 }

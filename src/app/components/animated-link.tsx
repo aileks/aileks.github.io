@@ -35,7 +35,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
       onMouseEnter={startAnimation}
       onMouseLeave={stopAnimation}
     >
-      <span className="hover:italic inline-flex items-center">
+      <span className="hover:italic font-semibold underline underline-offset-2 inline-flex items-center">
         {text}
         <motion.svg
           animate={controls}

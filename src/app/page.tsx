@@ -51,12 +51,12 @@ export default function Home() {
           animate={headerControls}
           className="header-container mb-8"
         >
-          <h1 className="text-5xl font-bold flex flex-col mt-12">
-            <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.fuchsia.400),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
-              Unraveling digital puzzles
+          <h1 className="text-3xl md:text-5xl font-bold flex flex-col mt-12">
+            <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.violet.200),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+              Solving digital puzzles
             </span>
 
-            <span className="text-4xl font-bold italic">
+            <span className="text-2xl md:text-4xl font-bold italic">
               one pixel at time.
             </span>
           </h1>
@@ -67,9 +67,11 @@ export default function Home() {
           animate={aboutControls}
           className="about-container self-end max-w-md mb-8 mt-2"
         >
-          <h2 className="text-3xl font-bold mb-4">Who the h*ck am I?</h2>
+          <h2 className="text-2xl md:text-3xl text-center font-bold mb-4">
+            Who the h*ck am I?
+          </h2>
 
-          <p className="text-lg text-left">
+          <p className="text-lg text-center sm:text-left">
             My name is Aaliyah and I build stuff. I&apos;m a Junior at ASU
             pursuing a B.S. in Software Engineering while also learning things
             on my own. I&apos;ve been tinkering with things since childhood and
@@ -84,9 +86,11 @@ export default function Home() {
           animate={projectsControls}
           className="projects-container w-96 mb-8 mt-2"
         >
-          <h2 className="text-3xl mb-4 font-bold">Projects</h2>
+          <h2 className="text-2xl text-center md:text-3xl mb-4 font-bold">
+            Projects
+          </h2>
 
-          <ul className="space-y-4">
+          <ul className="space-y-4 text-center sm:text-left">
             <li>
               <AnimatedLink
                 href={'https://www.quillify-app.com/'}
@@ -144,13 +148,13 @@ export default function Home() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="white"
                 className="hover-effect w-7 h-7 mb-0.5"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                 />
               </svg>
