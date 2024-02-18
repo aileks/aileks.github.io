@@ -9,8 +9,7 @@
 
 body {
   color: white;
-  background: linear-gradient(30deg, #000000, #2a2a2a, #000000);
-  background-size: 200% 200%;
+  background-color: black;
   padding: 0 1rem;
   overflow: clip;
 }
@@ -27,7 +26,7 @@ body {
 }
 
 .hover-effect:hover {
-  filter: drop-shadow(3px 3px #a6cfd5) drop-shadow(-3px -3px #735290);
+  filter: drop-shadow(3px 3px #cc8983) drop-shadow(-3px -3px #3a797e);
 }
 
 @layer utilities {
