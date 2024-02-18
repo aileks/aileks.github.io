@@ -9,9 +9,12 @@
 
 body {
   color: white;
+  background-image: url('../../public/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: black;
   padding: 0 1rem;
-  overflow: clip;
 }
 
 .header-container,
@@ -94,23 +97,9 @@ body {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-width: 768px) {
   body {
-    padding: 0 1rem;
-    overflow: auto;
-  }
-}
-
-@media (max-width: 800px) {
-  h1,
-  h2,
-  h3 {
-    text-align: center;
-  }
-
-  body {
-    padding: 0 1rem;
     max-height: 90vh;
-    overflow: auto;
+    background-size: 125% 125%;
   }
 }

@@ -44,107 +44,107 @@ export default function Home() {
 
   return (
     <>
-      <svg
+      {/* <svg
         id="bg-svg"
-        viewBox="0 0 900 600"
+        viewBox="0 0 600 400"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        className="absolute object-fill z-[-1] top-0 left-0"
+        className="absolute bg-cover bg-center z-[-1] overflow-clip top-0 left-0"
       >
         <defs>
           <linearGradient id="grad1_0" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#1a1a1a" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#1a1a1a" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#1a1a1a" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#1a1a1a" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_1" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#1a1a1a" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#171717" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#1a1a1a" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#171717" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_2" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#151515" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#171717" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#151515" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#171717" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_3" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#151515" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#121212" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#151515" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#121212" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_4" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#0e0e0e" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#121212" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#0e0e0e" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#121212" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_5" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#0e0e0e" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#0a0a0a" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#0e0e0e" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#0a0a0a" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_6" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#050505" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#0a0a0a" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#050505" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#0a0a0a" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad1_7" x1="33.3%" y1="100%" x2="100%" y2="0%">
-            <stop offset="20%" stop-color="#050505" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#000000" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#050505" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#000000" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_0" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#1a1a1a" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#1a1a1a" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#1a1a1a" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#1a1a1a" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_1" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#171717" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#1a1a1a" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#171717" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#1a1a1a" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_2" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#171717" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#151515" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#171717" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#151515" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_3" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#121212" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#151515" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#121212" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#151515" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_4" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#121212" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#0e0e0e" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#121212" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#0e0e0e" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_5" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#0a0a0a" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#0e0e0e" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#0a0a0a" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#0e0e0e" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_6" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#0a0a0a" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#050505" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#0a0a0a" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#050505" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <defs>
           <linearGradient id="grad2_7" x1="0%" y1="100%" x2="66.7%" y2="0%">
-            <stop offset="20%" stop-color="#000000" stop-opacity="1"></stop>
-            <stop offset="80%" stop-color="#050505" stop-opacity="1"></stop>
+            <stop offset="20%" stop-color="#000000" stopColor="1"></stop>
+            <stop offset="80%" stop-color="#050505" stopColor="1"></stop>
           </linearGradient>
         </defs>
         <g transform="translate(900, 600)">
@@ -216,8 +216,11 @@ export default function Home() {
           ></path>
         </g>
       </svg>
+ */}
 
-      <FollowCursor />
+      <div className="lg:block hidden">
+        <FollowCursor />
+      </div>
 
       <div className="flex flex-col min-h-screen">
         <motion.header
@@ -317,11 +320,12 @@ export default function Home() {
         <motion.footer
           initial={{ y: '5', opacity: 0 }}
           animate={footerControls}
-          className="footer text-sm flex items-center pb-1 mt-auto justify-between"
+          className="footer text-sm flex items-center pb-1 mt-auto justify-around"
         >
           <aside className="items-center grid-flow-col">
             <p className="italic">© 2024 - Aaliyah Harper</p>
           </aside>
+
           <nav className="flex space-x-2 items-center md:place-self-center md:justify-self-end">
             <Link href="mailto:aeverly14@protonmail.com">
               <svg
