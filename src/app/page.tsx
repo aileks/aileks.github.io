@@ -279,7 +279,7 @@ export default function Home() {
 
             <li>
               <AnimatedLink
-                href={'https://github.com/aileks/livwire-todo'}
+                href={'https://github.com/aileks/livewire-todo'}
                 text={'Livewire To-Do'}
               />
               <p className="text-sm mt-1">
