@@ -70,7 +70,7 @@ export default function Home() {
           animate={aboutControls}
           className="about-container self-end max-w-md mb-8 mt-2"
         >
-          <h2 className="text-xl md:text-3xl text-center font-bold mb-4">
+          <h2 className="text-2xl md:text-3xl text-center font-bold mb-4">
             Who the h*ck am I?
           </h2>
 
@@ -89,7 +89,7 @@ export default function Home() {
           animate={projectsControls}
           className="projects-container w-96 mb-8 mt-2"
         >
-          <h2 className="text-xl text-center md:text-3xl mb-4 font-bold">
+          <h2 className="text-2xl text-center md:text-3xl mb-4 font-bold">
             Projects
           </h2>
 
