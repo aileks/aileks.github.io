@@ -266,11 +266,13 @@ export default function Home() {
 
           <ul className="space-y-4 text-center sm:text-left">
             <li>
-              <AnimatedLink
-                href={'https://www.quillify-app.com/'}
-                text={'Quillify'}
-              />
-              <p className="text-sm mt-1">
+              <span className="text-lg">
+                <AnimatedLink
+                  href={'https://www.quillify-app.com/'}
+                  text={'Quillify'}
+                />
+              </span>
+              <p className="mt-1">
                 A minimal web app book lovers can use to track their to-be-read
                 lists! Has graphs to visualize your book tracking data.
                 Currently in alpha.
@@ -278,11 +280,13 @@ export default function Home() {
             </li>
 
             <li>
-              <AnimatedLink
-                href={'https://github.com/aileks/livewire-todo'}
-                text={'Livewire To-Do'}
-              />
-              <p className="text-sm mt-1">
+              <span className="text-lg">
+                <AnimatedLink
+                  href={'https://github.com/aileks/livewire-todo'}
+                  text={'Livewire To-Do'}
+                />
+              </span>
+              <p className="mt-1">
                 Your usual to-do app, but built with{' '}
                 <Link
                   href="https://livewire.laravel.com/"
@@ -295,11 +299,13 @@ export default function Home() {
             </li>
 
             <li>
-              <AnimatedLink
-                href={'https://github.com/aileks/etch-a-sketch'}
-                text={'Etch-a-Sketch'}
-              />
-              <p className="text-sm mt-1">
+              <span className="text-lg">
+                <AnimatedLink
+                  href={'https://github.com/aileks/etch-a-sketch'}
+                  text={'Etch-a-Sketch'}
+                />
+              </span>
+              <p className="mt-1">
                 One of my first projects ever and I&apos;m still proud of it.
                 Uses only HTML, CSS, and vanilla JavaScript while still keeping
                 modern UI elements you know and love.
