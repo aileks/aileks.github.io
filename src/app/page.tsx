@@ -44,22 +44,22 @@ export default function Home() {
 
   return (
     <>
-      <div className="lg:block hidden">
+      <div className="hidden lg:block">
         <FollowCursor />
       </div>
 
-      <div className="flex flex-col min-h-screen">
+      <div className="flex min-h-screen flex-col">
         <motion.header
           initial={{ y: '-10', opacity: 0 }}
           animate={headerControls}
           className="header-container mb-8"
         >
-          <h1 className="text-3xl md:text-5xl sm:text-left text-center font-bold flex flex-col mt-12">
-            <span className="bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.violet.200),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient">
+          <h1 className="mt-12 flex flex-col text-center text-3xl font-bold sm:text-left md:text-5xl">
+            <span className="animate-gradient bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.violet.200),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
               Solving digital puzzles
             </span>
 
-            <span className="text-2xl md:text-4xl font-bold italic">
+            <span className="text-2xl font-bold italic md:text-4xl">
               one pixel at time.
             </span>
           </h1>
@@ -68,13 +68,13 @@ export default function Home() {
         <motion.div
           initial={{ x: '10', opacity: 0 }}
           animate={aboutControls}
-          className="about-container self-end max-w-md mb-8 mt-2"
+          className="about-container mb-8 mt-2 max-w-md self-end"
         >
-          <h2 className="text-2xl md:text-3xl text-center font-bold mb-4">
+          <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Who the h*ck am I?
           </h2>
 
-          <p className="text-base sm:text-lg text-center sm:text-left">
+          <p className="text-center text-base sm:text-left sm:text-lg">
             My name is Aaliyah and I build stuff. I&apos;m a Junior at ASU
             pursuing a B.S. in Software Engineering while also learning things
             on my own. I&apos;ve been tinkering with things since childhood and
@@ -87,9 +87,9 @@ export default function Home() {
         <motion.div
           initial={{ x: '-10', opacity: 0 }}
           animate={projectsControls}
-          className="projects-container w-96 mb-8 mt-2"
+          className="projects-container mb-8 mt-2 w-96"
         >
-          <h2 className="text-2xl text-center md:text-3xl mb-4 font-bold">
+          <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Projects
           </h2>
 
@@ -146,13 +146,13 @@ export default function Home() {
         <motion.footer
           initial={{ y: '5', opacity: 0 }}
           animate={footerControls}
-          className="footer text-sm flex items-center pb-1 mt-auto justify-around"
+          className="footer mt-auto flex items-center justify-around pb-1 text-sm"
         >
-          <aside className="items-center grid-flow-col">
+          <aside className="grid-flow-col items-center">
             <p className="italic">© 2024 - Aaliyah Harper</p>
           </aside>
 
-          <nav className="flex space-x-2 items-center md:place-self-center md:justify-self-end">
+          <nav className="flex items-center space-x-2 md:place-self-center md:justify-self-end">
             <Link href="mailto:aeverly14@protonmail.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="white"
-                className="hover-effect w-7 h-7 mb-0.5"
+                className="hover-effect mb-0.5 h-7 w-7"
               >
                 <path
                   strokeLinecap="round"
@@ -174,7 +174,7 @@ export default function Home() {
               <img
                 src="github-mark-white.png"
                 alt="Hithub Inverticat logo"
-                className="hover-effect w-5 h-5 mb-1"
+                className="hover-effect mb-1 h-5 w-5"
               />
             </Link>
 
@@ -182,7 +182,7 @@ export default function Home() {
               <img
                 src="linkedin-white.png"
                 alt="LinkedIn logo in white"
-                className="hover-effect w-5 h-5 mb-1"
+                className="hover-effect mb-1 h-5 w-5"
               />
             </Link>
           </nav>
