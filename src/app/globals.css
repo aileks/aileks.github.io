@@ -100,6 +100,6 @@ body {
 @media (max-width: 768px) {
   body {
     max-height: 90vh;
-    background-size: 125% 125%;
+    background-size: 150% 150%;
   }
 }
