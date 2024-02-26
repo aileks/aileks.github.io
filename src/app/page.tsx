@@ -12,14 +12,12 @@ export default function Home() {
   const headerControls = useAnimation();
   const aboutControls = useAnimation();
   const projectsControls = useAnimation();
-  const footerControls = useAnimation();
 
   useEffect(() => {
     const sequence = async () => {
       await headerControls.start({
-        y: 0,
         opacity: 1,
-        transition: { duration: 0.6 },
+        transition: { duration: 0.5 },
       });
       await Promise.all([
         aboutControls.start({
@@ -33,15 +31,10 @@ export default function Home() {
           transition: { duration: 0.7 },
         }),
       ]);
-      await footerControls.start({
-        y: 0,
-        opacity: 1,
-        transition: { duration: 0.7 },
-      });
     };
 
     sequence();
-  }, [aboutControls, footerControls, headerControls, projectsControls]);
+  }, [aboutControls, headerControls, projectsControls]);
 
   return (
     <>
@@ -51,7 +44,7 @@ export default function Home() {
 
       <div className="flex min-h-screen flex-col">
         <motion.header
-          initial={{ y: '-10', opacity: 0 }}
+          initial={{ opacity: 0 }}
           animate={headerControls}
           className="header-container mb-8"
         >
@@ -144,11 +137,7 @@ export default function Home() {
           </ul>
         </motion.div>
 
-        <motion.footer
-          initial={{ y: '5', opacity: 0 }}
-          animate={footerControls}
-          className="footer mt-auto flex items-center justify-around overflow-clip pb-1 text-sm"
-        >
+        <footer className="footer mt-auto flex items-center justify-around overflow-clip pb-1 text-sm">
           <aside className="grid-flow-col items-center">
             <p className="italic">© 2024 - Aaliyah Harper</p>
           </aside>
@@ -187,7 +176,7 @@ export default function Home() {
               />
             </Link>
           </nav>
-        </motion.footer>
+        </footer>
       </div>
       <BgBeams />
     </>
