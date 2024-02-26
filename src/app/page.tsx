@@ -36,7 +36,7 @@ export default function Home() {
       await footerControls.start({
         y: 0,
         opacity: 1,
-        transition: { duration: 0.6 },
+        transition: { duration: 0.7 },
       });
     };
 
@@ -147,7 +147,7 @@ export default function Home() {
         <motion.footer
           initial={{ y: '5', opacity: 0 }}
           animate={footerControls}
-          className="footer mt-auto flex items-center justify-around pb-1 text-sm"
+          className="footer mt-auto flex items-center justify-around overflow-clip pb-1 text-sm"
         >
           <aside className="grid-flow-col items-center">
             <p className="italic">© 2024 - Aaliyah Harper</p>
