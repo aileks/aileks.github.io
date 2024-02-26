@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import FollowCursor from './components/follow-cursor';
 import AnimatedLink from './components/animated-link';
+import { BgBeams } from './components/bg-beams';
 import { motion, useAnimation } from 'framer-motion';
 
 export default function Home() {
@@ -55,7 +56,7 @@ export default function Home() {
           className="header-container mb-8"
         >
           <h1 className="mt-12 flex flex-col text-center text-3xl font-bold sm:text-left md:text-5xl">
-            <span className="animate-gradient bg-[linear-gradient(to_right,theme(colors.rose.400),theme(colors.rose.200),theme(colors.red.400),theme(colors.purple.400),theme(colors.violet.200),theme(colors.rose.200),theme(colors.rose.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
+            <span className="animate-gradient bg-[linear-gradient(to_right,theme(colors.violet.400),theme(colors.violet.200),theme(colors.violet.400),theme(colors.indigo.400),theme(colors.indigo.200),theme(colors.purple.200),theme(colors.violet.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
               Solving digital puzzles
             </span>
 
@@ -188,6 +189,7 @@ export default function Home() {
           </nav>
         </motion.footer>
       </div>
+      <BgBeams />
     </>
   );
 }
