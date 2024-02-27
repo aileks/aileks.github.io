@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 
 type AnimatedLinkProps = {
@@ -29,20 +28,20 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
   };
 
   return (
-    <Link
+    <a
       href={href}
       className="text-md"
       onMouseEnter={startAnimation}
       onMouseLeave={stopAnimation}
     >
-      <span className="hover:italic font-semibold underline underline-offset-2 inline-flex items-center">
+      <span className="inline-flex items-center font-semibold underline underline-offset-2 hover:italic">
         {text}
         <motion.svg
           animate={controls}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="w-5 h-5"
+          className="h-5 w-5"
         >
           <path
             fillRule="evenodd"
@@ -51,7 +50,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
           />
         </motion.svg>
       </span>
-    </Link>
+    </a>
   );
 };
 

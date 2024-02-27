@@ -2,7 +2,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import Link from 'next/link';
 import FollowCursor from './components/follow-cursor';
 import AnimatedLink from './components/animated-link';
 import { BgBeams } from './components/bg-beams';
