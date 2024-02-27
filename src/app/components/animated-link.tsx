@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 
 type AnimatedLinkProps = {
@@ -28,7 +29,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
   };
 
   return (
-    <a
+    <Link
       href={href}
       className="text-md"
       onMouseEnter={startAnimation}
@@ -50,7 +51,7 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, text }) => {
           />
         </motion.svg>
       </span>
-    </a>
+    </Link>
   );
 };
 
