@@ -89,7 +89,7 @@ export default function Home() {
             Projects
           </h2>
 
-          <ul className="space-y-4 text-center sm:text-left">
+          <ul className="z-50 space-y-4 text-center sm:text-left">
             <li>
               <span className="sm:text-lg">
                 <AnimatedLink
