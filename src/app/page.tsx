@@ -145,7 +145,7 @@ export default function Home() {
           </aside>
 
           <nav className="flex items-center space-x-2 md:place-self-center md:justify-self-end">
-            <Link href="mailto:aeverly14@protonmail.com">
+            <Link href="mailto:aeverly14@pm.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
