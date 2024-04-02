@@ -126,7 +126,7 @@ export default function Home() {
             <li>
               <span className="sm:text-lg">
                 <AnimatedLink
-                  href={'https://github.com/aileks/etch-a-sketch'}
+                  href={'https://aileks.github.io/etch-a-sketch'}
                   text={'Etch-a-Sketch'}
                 />
               </span>
