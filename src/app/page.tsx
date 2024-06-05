@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import FollowCursor from './components/follow-cursor';
 import AnimatedLink from './components/animated-link';
-import { BgBeams } from './components/bg-beams';
 import { motion, useAnimation } from 'framer-motion';
 
 export default function Home() {
@@ -84,7 +83,7 @@ export default function Home() {
             Projects
           </h2>
 
-          <ul className="z-50 space-y-4 text-center sm:text-left">
+          <ul className="space-y-4 text-center sm:text-left">
             <li>
               <span className="sm:text-lg">
                 <AnimatedLink
