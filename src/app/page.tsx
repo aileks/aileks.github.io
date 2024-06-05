@@ -70,8 +70,8 @@ export default function Home() {
           <p className="text-center text-base sm:text-left sm:text-lg">
             Hi! My name is Aaliyah! My main hobbies are tinkering and building
             side projects. My specialties include Laravel used Inertia.js and
-            front-end frameworks such as Vue and React. I'm always looking to
-            learn and absorb as much information as possible.
+            front-end frameworks such as Vue and React. I&apos;m always looking
+            to learn and absorb as much information as possible.
           </p>
         </motion.div>
 
