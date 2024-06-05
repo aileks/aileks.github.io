@@ -36,16 +36,16 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/aspect-ratio'), addVariablesForColors],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
 
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme('colors'));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
+// function addVariablesForColors({ addBase, theme }: any) {
+//   let allColors = flattenColorPalette(theme('colors'));
+//   let newVars = Object.fromEntries(
+//     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+//   );
 
-  addBase({
-    ':root': newVars,
-  });
-}
+//   addBase({
+//     ':root': newVars,
+//   });
+// }
