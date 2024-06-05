@@ -9,7 +9,8 @@
 
 body {
   color: white;
-  background-color: #111111;
+  background-color: rgb(4, 1, 7);
+  background-size: 100%;
   padding: 0 1rem;
 }
 

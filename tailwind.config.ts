@@ -16,20 +16,8 @@ module.exports = {
   },
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       animation: {
         gradient: 'gradient 15s linear infinite',
-      },
-      keyframes: {
-        gradient: {
-          to: {
-            'background-position': '200% center',
-          },
-        },
       },
       fontFamily: {
         sans: ['Josefin Sans', 'sans-serif'],
