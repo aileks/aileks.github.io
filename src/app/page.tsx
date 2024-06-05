@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useEffect } from 'react';
@@ -38,8 +37,6 @@ export default function Home() {
 
   return (
     <>
-      <BgBeams />
-
       <div className="hidden lg:block">
         <FollowCursor />
       </div>
@@ -62,7 +59,7 @@ export default function Home() {
         </motion.header>
 
         <motion.div
-          initial={{ x: '10', opacity: 0 }}
+          initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
           className="about-container mb-8 mt-2 max-w-md self-end"
         >
@@ -71,17 +68,15 @@ export default function Home() {
           </h2>
 
           <p className="text-center text-base sm:text-left sm:text-lg">
-            My name is Aaliyah and I build stuff. I&apos;m a Junior at ASU
-            pursuing a B.S. in Software Engineering while also learning things
-            on my own. I&apos;ve been tinkering with things since childhood and
-            it&apos;s this passion and curiosity that drives me. My specialties
-            are PHP (including Laravel) and JavaScript (including Vue3 +
-            Next.js).
+            Hi! My name is Aaliyah! My main hobbies are tinkering and building
+            side projects. My specialties include Laravel used Inertia.js and
+            front-end frameworks such as Vue and React. Check out some of my
+            projects below.
           </p>
         </motion.div>
 
         <motion.div
-          initial={{ x: '-10', opacity: 0 }}
+          initial={{ x: '-10%', opacity: 0 }}
           animate={projectsControls}
           className="projects-container mb-8 mt-2 w-96"
         >
