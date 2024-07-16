@@ -60,13 +60,13 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-2 max-w-md self-end md:mr-4"
+          className="about-container mb-8 mt-2 max-w-lg self-end"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Who the h*ck am I?
           </h2>
 
-          <p className="text-center text-base sm:text-left sm:text-lg">
+          <p className="text-center text-base sm:text-lg">
             I thrive on the intersection of creativity and technology,
             constantly seeking to innovate and build. I’m passionate about human
             rights and digital privacy, which fuels my dream of enhancing
@@ -81,15 +81,15 @@ export default function Home() {
         <motion.div
           initial={{ x: '-10%', opacity: 0 }}
           animate={projectsControls}
-          className="projects-container mb-8 mt-2 w-96 md:ml-4"
+          className="projects-container mb-8 mt-2 w-96 max-w-lg"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Projects
           </h2>
 
-          <ul className="space-y-4 text-center sm:text-left">
+          <ul className="space-y-4 text-center text-base md:text-justify md:text-lg">
             <li>
-              <span className="sm:text-lg">
+              <span className="text-base md:text-lg">
                 <AnimatedLink
                   href={'https://www.quillify-app.com/'}
                   text={'Quillify'}
@@ -103,26 +103,26 @@ export default function Home() {
             </li>
 
             <li>
-              <span className="sm:text-lg">
+              <span className="text-base md:text-lg">
                 <AnimatedLink
                   href={'https://github.com/aileks/livewire-todo'}
                   text={'Livewire To-Do'}
                 />
               </span>
               <p className="mt-1">
-                Your usual to-do app, but built with
+                Your usual to-do app, but built with{' '}
                 <Link
                   href="https://livewire.laravel.com/"
                   className="font-bold italic hover:underline"
                 >
                   Livewire
-                </Link>
+                </Link>{' '}
                 for a reactive experience using 99% PHP.
               </p>
             </li>
 
             <li>
-              <span className="sm:text-lg">
+              <span className="text-base md:text-lg">
                 <AnimatedLink
                   href={'https://aileks.github.io/etch-a-sketch'}
                   text={'Etch-a-Sketch'}
@@ -140,13 +140,13 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-2 max-w-md self-end text-center md:mr-4"
+          className="about-container mb-8 mt-2 max-w-sm self-end text-center md:max-w-md"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Skills
           </h2>
 
-          <div className="ml-2 flex flex-wrap gap-2 md:ml-0 md:gap-4">
+          <div className="ml-6 flex flex-wrap gap-2 md:ml-0 md:gap-4">
             {[
               'html5',
               'css3',
@@ -167,7 +167,7 @@ export default function Home() {
             ].map((skill) => (
               <img
                 key={skill}
-                className="h-10 w-10"
+                className="h-12 w-12 md:h-10 md:w-10"
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill}/${skill}-original.svg`}
                 alt={`${skill} icon`}
                 title={`${skill} icon`}
