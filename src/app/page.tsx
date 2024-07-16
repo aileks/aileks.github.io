@@ -74,7 +74,7 @@ export default function Home() {
             detail-oriented mindset, strong communication skills, and an
             eagerness to learn from feedback, always striving to create
             solutions that make a meaningful impact. My life goal is to make a
-            mark on the AI industry.
+            difference in the AI industry.
           </p>
         </motion.div>
 
