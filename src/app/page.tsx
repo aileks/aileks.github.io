@@ -48,11 +48,11 @@ export default function Home() {
         >
           <h1 className="mt-12 flex flex-col text-center text-3xl font-bold sm:text-left md:text-5xl">
             <span className="animate-gradient bg-[linear-gradient(to_right,theme(colors.violet.400),theme(colors.violet.200),theme(colors.violet.400),theme(colors.indigo.400),theme(colors.indigo.200),theme(colors.purple.200),theme(colors.violet.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
-              Solving digital puzzles
+              Aaliyah Harper
             </span>
 
             <span className="text-2xl font-bold italic md:text-4xl">
-              one pixel at time.
+              Solving digital puzzles one pixel at time.
             </span>
           </h1>
         </motion.header>
@@ -67,10 +67,14 @@ export default function Home() {
           </h2>
 
           <p className="text-center text-base sm:text-left sm:text-lg">
-            Hi! My name is Aaliyah! My main hobbies are tinkering and building
-            side projects. My specialties include Laravel used Inertia.js and
-            front-end frameworks such as Vue and React. I&apos;m always looking
-            to learn and absorb as much information as possible.
+            I thrive on the intersection of creativity and technology,
+            constantly seeking to innovate and build. I’m passionate about human
+            rights and digital privacy, which fuels my dream of enhancing
+            product privacy at tech companies. I approach each project with a
+            detail-oriented mindset, strong communication skills, and an
+            eagerness to learn from feedback, always striving to create
+            solutions that make a meaningful impact. My life goal is to make a
+            mark on the AI industry.
           </p>
         </motion.div>
 
@@ -106,13 +110,13 @@ export default function Home() {
                 />
               </span>
               <p className="mt-1">
-                Your usual to-do app, but built with{' '}
+                Your usual to-do app, but built with
                 <Link
                   href="https://livewire.laravel.com/"
                   className="font-bold italic hover:underline"
                 >
                   Livewire
-                </Link>{' '}
+                </Link>
                 for a reactive experience using 99% PHP.
               </p>
             </li>
