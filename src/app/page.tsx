@@ -44,7 +44,7 @@ export default function Home() {
         <motion.header
           initial={{ opacity: 0 }}
           animate={headerControls}
-          className="header-container mb-8"
+          className="header-container mb-8 ml-4"
         >
           <h1 className="mt-12 flex flex-col text-center text-3xl font-bold sm:text-left md:text-5xl">
             <span className="animate-gradient bg-[linear-gradient(to_right,theme(colors.violet.400),theme(colors.violet.200),theme(colors.violet.400),theme(colors.indigo.400),theme(colors.indigo.200),theme(colors.purple.200),theme(colors.violet.400))] bg-[length:200%_auto] bg-clip-text text-transparent">
@@ -60,7 +60,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-2 max-w-md self-end"
+          className="about-container mb-8 mr-4 mt-2 max-w-md self-end"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Who the h*ck am I?
@@ -81,7 +81,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '-10%', opacity: 0 }}
           animate={projectsControls}
-          className="projects-container mb-8 mt-2 w-96"
+          className="projects-container mb-8 ml-4 mt-2 w-96"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Projects
@@ -135,6 +135,44 @@ export default function Home() {
               </p>
             </li>
           </ul>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: '10%', opacity: 0 }}
+          animate={aboutControls}
+          className="about-container mb-8 mr-4 mt-2 max-w-md self-end text-left"
+        >
+          <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
+            Skills
+          </h2>
+
+          <div className="flex flex-wrap gap-4">
+            {[
+              'javascript',
+              'html5',
+              'css3',
+              'typescript',
+              'nodejs',
+              'express',
+              'laravel',
+              'php',
+              'mysql',
+              'postgresql',
+              'react',
+              'nextjs',
+              'vuejs',
+              'bootstrap',
+              'tailwindcss',
+              'git',
+            ].map((skill) => (
+              <img
+                key={skill}
+                className="h-10 w-10"
+                src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill}/${skill}-original.svg`}
+                alt={`${skill} icon`}
+              />
+            ))}
+          </div>
         </motion.div>
 
         <footer className="footer mt-auto flex items-center justify-around overflow-clip pb-1 text-sm">
