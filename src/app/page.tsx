@@ -148,16 +148,16 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4">
             {[
-              'javascript',
               'html5',
               'css3',
+              'javascript',
               'typescript',
               'nodejs',
-              'express',
-              'laravel',
               'php',
+              'laravel',
               'mysql',
               'postgresql',
+              'express',
               'react',
               'nextjs',
               'vuejs',
@@ -170,6 +170,7 @@ export default function Home() {
                 className="h-10 w-10"
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill}/${skill}-original.svg`}
                 alt={`${skill} icon`}
+                title={`${skill} icon`}
               />
             ))}
           </div>
