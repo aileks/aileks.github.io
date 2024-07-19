@@ -60,7 +60,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-11 mt-4 max-w-lg self-end"
+          className="about-container mb-8 mt-4 max-w-xl self-end"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             About
@@ -81,7 +81,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '-10%', opacity: 0 }}
           animate={projectsControls}
-          className="projects-container mb-8 mt-4 w-2/5 max-w-lg"
+          className="projects-container mb-8 mt-4 max-w-lg"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Projects
@@ -140,7 +140,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-4 max-w-sm self-end text-center md:max-w-md"
+          className="skills-container mb-12 mt-4 max-w-sm self-end text-center md:max-w-md"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Skills

@@ -18,9 +18,15 @@ body {
   padding: 0 1rem;
 }
 
+div:hover {
+  filter: drop-shadow(3px 3px #111111);
+  border: none;
+}
+
 .header-container,
 .about-container,
-.projects-container {
+.projects-container,
+.skills-container {
   flex-grow: 1;
 }
 
@@ -110,7 +116,8 @@ body {
   }
 
   .about-container,
-  .projects-container {
+  .projects-container,
+  .skills-container {
     align-self: center;
   }
 }
