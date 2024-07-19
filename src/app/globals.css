@@ -98,8 +98,19 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     max-height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+
+  .about-container,
+  .projects-container {
+    align-self: center;
   }
 }
