@@ -63,7 +63,7 @@ export default function Home() {
           className="about-container mb-8 mt-2 max-w-lg self-end"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
-            Who the h*ck am I?
+            About
           </h2>
 
           <p className="text-center text-base sm:text-lg">
