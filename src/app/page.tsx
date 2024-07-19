@@ -60,7 +60,7 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-2 max-w-lg self-end"
+          className="about-container mb-11 mt-4 max-w-lg self-end"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             About
@@ -81,13 +81,13 @@ export default function Home() {
         <motion.div
           initial={{ x: '-10%', opacity: 0 }}
           animate={projectsControls}
-          className="projects-container mb-8 mt-2 w-96 max-w-lg"
+          className="projects-container mb-8 mt-4 w-2/5 max-w-lg"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Projects
           </h2>
 
-          <ul className="space-y-4 text-center text-base md:text-justify md:text-lg">
+          <ul className="space-y-6 text-center text-base md:text-left md:text-lg">
             <li>
               <span className="text-base md:text-lg">
                 <AnimatedLink
@@ -140,13 +140,13 @@ export default function Home() {
         <motion.div
           initial={{ x: '10%', opacity: 0 }}
           animate={aboutControls}
-          className="about-container mb-8 mt-2 max-w-sm self-end text-center md:max-w-md"
+          className="about-container mb-8 mt-4 max-w-sm self-end text-center md:max-w-md"
         >
           <h2 className="mb-4 text-center text-2xl font-bold md:text-3xl">
             Skills
           </h2>
 
-          <div className="ml-6 flex flex-wrap gap-2 md:ml-0 md:gap-4">
+          <div className="mb-4 ml-6 flex flex-wrap gap-2 md:ml-0 md:gap-4">
             {[
               'html5',
               'css3',
