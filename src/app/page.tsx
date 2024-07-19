@@ -68,8 +68,8 @@ export default function Home() {
 
           <p className="text-center text-base sm:text-lg">
             I thrive on the intersection of creativity and technology,
-            constantly seeking to innovate and build. I’m passionate about human
-            rights and digital privacy, which fuels my dream of enhancing
+            constantly seeking to innovate and build. I&apos;m passionate about
+            human rights and digital privacy, which fuels my dream of enhancing
             product privacy at tech companies. I approach each project with a
             detail-oriented mindset, strong communication skills, and an
             eagerness to learn from feedback, always striving to create
@@ -171,6 +171,7 @@ export default function Home() {
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill}/${skill}-original.svg`}
                 alt={`${skill} icon`}
                 title={`${skill} icon`}
+                aria-label={`${skill} skill`}
               />
             ))}
           </div>
@@ -181,8 +182,11 @@ export default function Home() {
             <p className="italic">© 2024 - Aaliyah Harper</p>
           </aside>
 
-          <nav className="flex items-center space-x-2 md:place-self-center md:justify-self-end">
-            <Link href="mailto:aeverly14@pm.com">
+          <nav
+            className="flex items-center space-x-2 md:place-self-center md:justify-self-end"
+            aria-label="Social media links"
+          >
+            <Link href="mailto:aeverly14@pm.com" aria-label="Email">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -190,6 +194,7 @@ export default function Home() {
                 strokeWidth="1.5"
                 stroke="white"
                 className="hover-effect mb-0.5 h-7 w-7"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -199,19 +204,24 @@ export default function Home() {
               </svg>
             </Link>
 
-            <Link href="https://github.com/aileks">
+            <Link href="https://github.com/aileks" aria-label="GitHub profile">
               <img
                 src="github-mark-white.png"
                 alt="Hithub Inverticat logo"
                 className="hover-effect mb-1 h-5 w-5"
+                aria-hidden="true"
               />
             </Link>
 
-            <Link href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/">
+            <Link
+              href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/"
+              aria-label="LinkedIn profile"
+            >
               <img
                 src="linkedin-white.png"
                 alt="LinkedIn logo in white"
                 className="hover-effect mb-1 h-5 w-5"
+                aria-hidden="true"
               />
             </Link>
           </nav>
