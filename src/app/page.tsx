@@ -98,7 +98,7 @@ export default function Home() {
               <p className="mt-1">
                 A minimal web app book lovers can use to track their to-be-read
                 lists! Has graphs to visualize your book tracking data.
-                Currently in alpha.
+                Currently in beta.
               </p>
             </li>
 
