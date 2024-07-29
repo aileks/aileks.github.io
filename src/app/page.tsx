@@ -146,7 +146,7 @@ export default function Home() {
             Skills
           </h2>
 
-          <div className="mb-4 ml-6 flex flex-wrap gap-2 md:ml-0 md:gap-4">
+          <span className="mb-4 ml-6 flex flex-wrap gap-2 md:ml-0 md:gap-4">
             {[
               'html5',
               'css3',
@@ -156,10 +156,10 @@ export default function Home() {
               'php',
               'laravel',
               'mysql',
+              'sqlite',
               'postgresql',
               'express',
               'react',
-              'nextjs',
               'vuejs',
               'bootstrap',
               'tailwindcss',
@@ -174,7 +174,7 @@ export default function Home() {
                 aria-label={`${skill} skill`}
               />
             ))}
-          </div>
+          </span>
         </motion.div>
 
         <footer className="footer mt-auto flex items-center justify-around overflow-clip pb-1 text-sm">
@@ -207,14 +207,14 @@ export default function Home() {
             <Link href="https://github.com/aileks" aria-label="GitHub profile">
               <img
                 src="github-mark-white.png"
-                alt="Hithub Inverticat logo"
+                alt="Github Inverticat logo"
                 className="hover-effect mb-1 h-5 w-5"
                 aria-hidden="true"
               />
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/aaliyah-harper-1473312b0/"
+              href="https://www.linkedin.com/in/aaliyah-harper/"
               aria-label="LinkedIn profile"
             >
               <img
