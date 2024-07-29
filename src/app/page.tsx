@@ -75,6 +75,13 @@ export default function Home() {
             eagerness to learn from feedback, always striving to create
             solutions that make a meaningful impact. My life goal is to make a
             difference in the AI industry.
+            <br />
+            <Link
+              href="https://drive.proton.me/urls/4EDPTJP970#q0ZS0fgbFhPl"
+              className="font-bold italic hover:underline"
+            >
+              Check out my resume here.
+            </Link>
           </p>
         </motion.div>
 
