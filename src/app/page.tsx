@@ -77,7 +77,7 @@ export default function Home() {
             difference in the AI industry.
             <br />
             <Link
-              href="https://drive.proton.me/urls/4EDPTJP970#q0ZS0fgbFhPl"
+              href="https://drive.proton.me/urls/6R9WDY6ZZ0#WCBOALBzFZ7Q"
               className="font-bold italic hover:underline"
             >
               Check out my resume here.
